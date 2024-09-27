@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes Brasileiros</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #005b96; /* Azul Brasil */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .banner {
+            position: relative;
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none; /* Remove underline from links */
+        }
+        .banner img {
+            width: 300px;
+            height: 450px;
+            object-fit: cover;
+            transition: opacity 0.3s;
+        }
+        .banner:hover img {
+            opacity: 0.7;
+        }
+        .banner:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+        }
+        footer {
+            background-color: #f7b733; /* Amarelo Brasil */
+            color: #333;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0,0,0,0.3);
+        }
+        .banner-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+        .banner:hover .banner-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Filmes Brasileiros</h1>
+        <h2>Descubra o melhor do cinema nacional, disponivel a qualquer hora na sua plataforma favorita</h2>
+    </header>
+
+    <div class="container">
+        <a href="https://www.youtube.com/watch?v=aZ3PFjhBgxk" target="_blank" class="banner">
+            <img src="https://br.web.img2.acsta.net/c_310_420/pictures/18/01/03/19/24/3938254.jpg" alt="Filme 1">
+            <div class="banner-overlay">Comédia</div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=i7Nm_RZvvxs" target="_blank" class="banner">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/2/2a/TropaDeElitePoster.jpg" alt="Filme 2">
+            <div class="banner-overlay">Ação</div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=nBWtTrLxUjM" target="_blank" class="banner">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/1/10/CidadedeDeus.jpg" alt="Filme 3">
+            <div class="banner-overlay">Drama</div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=zo1cNEwB5vY" target="_blank" class="banner">
+            <img src="https://m.media-amazon.com/images/M/MV5BYmYxMGRkNTAtNTNiNi00MDU3LThmYjUtOTFjNGJhZWI1MTFhXkEyXkFqcGdeQXVyMTkzODUwNzk@._V1_.jpg" alt="Filme 4">
+            <div class="banner-overlay">Comédia</div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=lARFBFxjLNI" target="_blank" class="banner">
+            <img src="https://image.tmdb.org/t/p/original/xzDI7TL50jipU05lzCGzn2qZgbu.jpg" alt="Filme 5">
+            <div class="banner-overlay">Drama</div>
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Filmes Brasileiros. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
